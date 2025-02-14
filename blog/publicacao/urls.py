@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.urls import path
 from .views import lista_postagens
+from .views import minha_view_rag_perplexity
 
 urlpatterns = [
     path('listagem/', lista_postagens),
+    path('rag/', minha_view_rag_perplexity),
 ]
