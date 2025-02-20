@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'publicacao',
     'cadastro',
+    'cadastro_exemplo',
 ]
 
 MIDDLEWARE = [
