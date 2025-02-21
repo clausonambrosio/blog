@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Pessoas</h1>
+<a href="{% url 'criar_pessoa' %}" class="btn btn-primary mb-3">Nova Pessoa</a>
+
+<form method="get" action="{% url 'buscar_pessoa' %}">
+    <input type="text" name="q" placeholder="Buscar...">
+    <button type="submit" class="btn btn-secondary">Buscar</button>
+</form>
+
+<div class="row">
+    {% for pessoa in pessoas %}
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            {% if pessoa.imagem %}
+            <img src="{{ pessoa.imagem.url }}" class="card-img-top" alt="{{ pessoa.nome }}">
+            {% endif %}
+            <div class="card-body">
+                <h5 class="card-title">{{ pessoa.nome }} {{ pessoa.sobrenome }}</h5>
+                <p class="card-text">Idade: {{ pessoa.idade }}</p>
+                <a href="{{ pessoa.get_absolute_url }}" class="btn btn-info">Ver Detalhes</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
