@@ -22,7 +22,7 @@ from blog import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('publicacao/', include('publicacao.urls')),
-    path('cadastro_exemplo/', include('cadastro_exemplo.urls'))
+    path('', include('cadastro_exemplo.urls'))
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

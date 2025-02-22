@@ -4,6 +4,9 @@
 <h1>Pessoas</h1>
 <a href="{% url 'criar_pessoa' %}" class="btn btn-primary mb-3">Nova Pessoa</a>
 
+
+<a href="{% url 'criar_habilidade' %}" class="btn btn-primary mb-3">Nova Habilidade</a>
+
 <form method="get" action="{% url 'buscar_pessoa' %}">
     <input type="text" name="q" placeholder="Buscar...">
     <button type="submit" class="btn btn-secondary">Buscar</button>
