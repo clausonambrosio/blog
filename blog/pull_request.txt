@@ -1,0 +1,11 @@
+Fazer git clone
+$ git clone https://github.com/GustavoGarciaPereira/projeto_aula_pull_request.git
+Entrar no projeto
+Abrir o vscode
+executar python main.py
+
+git checkout -b clauson
+git status
+git add main.py
+git commit -m "mensagem"
+git push origin clauson
