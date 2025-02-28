@@ -1,0 +1,22 @@
+Projeto estoque
+
+
+
+1  Tela menu
+
+
+admin
+produtos
+movimentacoes
+alertas
+
+quando abrir tem que ir para a tela menu
+
+
+
+2  ver o nome do produto em /movimentacoes/
+
+como em /produtos/
+
+
+
